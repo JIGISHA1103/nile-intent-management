@@ -15,6 +15,7 @@ class TravelRequirement(BaseModel):
 
     start_date: Optional[date] = None
     end_date: Optional[date] = None
+    duration_days: Optional[int] = Field(default=None, gt=0)
 
     group_size: Optional[int] = Field(default=None, gt=0)
 
